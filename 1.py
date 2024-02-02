@@ -14,10 +14,14 @@ class Mentor:
         self.courses_attached = []
 
 class Lecturer(Menotor):
-    pass
+    def __init__(self, name, surname):
+        super().__init__(self, name, surname)
+        self.courses_attached = []
 
 class Reviewer(Menotr):
-    pass
+    def __init__(self, name, surname):
+        super().__init__(self, name, surname)
+        self.courses_attached = []
 
 best_student = Student('Ruoy', 'Eman', 'your_gender')
 best_student.finished_courses += ['Git']
